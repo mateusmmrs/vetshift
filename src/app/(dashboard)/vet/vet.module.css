@@ -1,0 +1,222 @@
+.page {
+    animation: fadeIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* Header */
+.feedHeader {}
+
+.feedTitle {
+    font-size: var(--font-2xl);
+    font-weight: 800;
+}
+
+.location {
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.radius {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.searchIcon {
+    font-size: 1rem;
+}
+
+.searchInput {
+    flex: 1;
+    font-size: var(--font-md);
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+}
+
+.searchInput::placeholder {
+    color: var(--text-muted);
+}
+
+/* Filter Pills */
+.filterRow {
+    display: flex;
+    gap: var(--space-sm);
+    overflow-x: auto;
+    padding-bottom: var(--space-xs);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filterRow::-webkit-scrollbar {
+    display: none;
+}
+
+.filterPill {
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filterPill:hover {
+    border-color: var(--accent);
+    color: var(--text-primary);
+}
+
+.filterActive {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: white !important;
+}
+
+.resultsCount {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+/* Shift List */
+.shiftList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.shiftCard {
+    padding: var(--space-md);
+    cursor: pointer;
+    animation: fadeInUp 0.4s ease forwards;
+    opacity: 0;
+}
+
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-md);
+}
+
+.clinicInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.clinicAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--accent-light);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--font-md);
+}
+
+.clinicName {
+    font-weight: 600;
+    font-size: var(--font-md);
+}
+
+.clinicRating {
+    font-size: var(--font-xs);
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.detailRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardPrice {
+    font-size: var(--font-xl);
+    font-weight: 800;
+    color: var(--accent);
+}
+
+/* Expanded */
+.expandedSection {
+    animation: fadeIn 0.3s ease;
+    margin-top: var(--space-md);
+}
+
+.expandedDivider {
+    height: 1px;
+    background: var(--border);
+    margin-bottom: var(--space-md);
+}
+
+.expandedBlock {
+    margin-bottom: var(--space-md);
+}
+
+.expandedBlock h4 {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.expandedBlock p {
+    font-size: var(--font-sm);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.expandedBlock ul {
+    font-size: var(--font-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.expandedBlock li {
+    color: var(--accent);
+}
+
+.proposalNote {
+    font-size: var(--font-sm);
+    color: var(--warning);
+    background: var(--warning-light);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+}
