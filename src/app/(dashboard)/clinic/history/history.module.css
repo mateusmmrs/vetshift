@@ -1,0 +1,15 @@
+.page {
+    animation: fadeIn 0.4s ease;
+}
+
+.title {
+    font-size: var(--font-xl);
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: var(--font-sm);
+    margin-top: 4px;
+    margin-bottom: var(--space-xl);
+}
